@@ -3,6 +3,12 @@ variable "github_repository" {
   description = "GitHub repository to store Flux manifests"
 }
 
+variable "kustomization_override" {
+  type        = string
+  description = "Kustomization to override configuration set by default"
+  default     = ""
+}
+
 variable "target_path" {
   type        = string
   default     = "clusters"

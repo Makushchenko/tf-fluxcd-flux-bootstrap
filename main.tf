@@ -14,5 +14,6 @@ provider "flux" {
 }
 
 resource "flux_bootstrap_git" "this" {
-  path = var.target_path
+  path                   = var.target_path
+  kustomization_override = var.kustomization_override
 }
